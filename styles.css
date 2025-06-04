@@ -8,7 +8,7 @@ body {
    background: #f3f3f3; 
 }
 header { 
-   background: linear-gradient(90deg, #0000ff,#00bbff,#00ffff);
+   background: linear-gradient(90deg, #0000ff,#00bbff,#0000ff);
    color: #fff;
    /*padding: 1rem 2rem;*/
    display: flex;

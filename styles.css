@@ -100,7 +100,7 @@ nav a {
    margin: 0.5rem 0 1rem 0;
    text-align: center; 
 }
-.app-card button {
+button {
    background: #0078d7;
    color: #fff;
    border: none;

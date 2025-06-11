@@ -63,6 +63,8 @@ nav a {
    height: calc(100vh - 60px);
    border-spacing: 10px;
    border-radius: 10px;
+   right: 10px;
+   left: 10px;
 }
 .app-grid {
    display: grid;

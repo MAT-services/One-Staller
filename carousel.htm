@@ -7,7 +7,7 @@
 
 .carousel {
   position: relative;
-  width: calc(100% - 60px);
+  width: 100%;
   /*max-width: 600px;*/
   overflow: hidden;
   max-height: 100%;
@@ -22,12 +22,9 @@
 .carousel-item {
   min-width: 100%;
   width: calc(100% - 10px); 
-  height: calc(100vh - 70px); 
+  height: max-content/*calc(100vh - 70px)*/; 
   background-size: cover; 
   background-position: center;
-  /*right: 5px;
-  left: 5px;
-  top: 5px;*/
   border-radius: 10px;
   text-align: left;
   background-color: black;

@@ -22,7 +22,6 @@
                         includeHTML("carousel", "carousel.htm", initCarousel);
 
                         function initCarousel() {
-                            const totalItems = items.length;
                             const prevButton = document.querySelector("#carousel .prev");
                             const nextButton = document.querySelector("#carousel .next");
                             const carouselInner = document.querySelector("#carousel .carousel-inner");
@@ -45,16 +44,18 @@
                                 const offset = -currentIndex * 100;
                                 carouselInner.style.transform = `translateX(${offset}%)`;
                             }
+
+
+
                             // filepath: /workspaces/One-Staller/carousel.htm
-
-
+                            const totalItems = items.length;
                             function showSlide(index) {
                               carouselInner.style.transform = `translateX(-${index * 100}%)`;
                               items.forEach((item, i) => {
                                 item.classList.toggle('active', i === index);
                               });
                             }
-
+                            /*
                             function nextSlide() {
                               currentIndex = (currentIndex + 1) % totalItems;
                               showSlide(currentIndex);
@@ -64,7 +65,7 @@
                               currentIndex = (currentIndex - 1 + totalItems) % totalItems;
                               showSlide(currentIndex);
                             }
-
+                            */
                             // Auto défilement toutes les 4 secondes
                             let autoSlide = setInterval(nextSlide, 7000);
 

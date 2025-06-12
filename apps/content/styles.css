@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px; /* espace entre les éléments */
-  margin-top: 8px;
+  margin-top: 1px;
   padding: 12px 32px;
 }
             .app-icon {

@@ -44,6 +44,12 @@ body {
                 color: #ffd700;
                 margin-bottom: 8px;
             }
+            .app-secure {
+                font-size: 1rem;
+                color: #00c40a;
+                display: flex;
+                align-items: center;
+            }
             .install-btn {
                 background: #fff;
                 color: #0078d4;

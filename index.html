@@ -44,10 +44,6 @@
                                 const offset = -currentIndex * 100;
                                 carouselInner.style.transform = `translateX(${offset}%)`;
                             }
-
-
-
-                            // filepath: /workspaces/One-Staller/carousel.htm
                             const totalItems = items.length;
                             function showSlide(index) {
                               carouselInner.style.transform = `translateX(-${index * 100}%)`;
@@ -55,32 +51,20 @@
                                 item.classList.toggle('active', i === index);
                               });
                             }
-                            
+              
                             function nextSlide() {
                               currentIndex = (currentIndex + 1) % totalItems;
                               showSlide(currentIndex);
-                            }
-
+                            }/*
                             function prevSlide() {
                               currentIndex = (currentIndex - 1 + totalItems) % totalItems;
                               showSlide(currentIndex);
-                            }
+                            }*/
                             // Auto défilement toutes les 4 secondes
                             let autoSlide = setInterval(nextSlide, 7000);
-                            /*
-                            // Boutons manuel
-                            document.querySelector('.next').onclick = () => {
-                              nextSlide();
-                              resetAutoSlide();
-                            };
-                            document.querySelector('.prev').onclick = () => {
-                              prevSlide();
-                              resetAutoSlide();
-                            };
-                            */
                             function resetAutoSlide() {
                               clearInterval(autoSlide);
-                              autoSlide = setInterval(nextSlide, 4000);
+                              autoSlide = setInterval(nextSlide, 7000);
                             } 
                         }
                     </script>

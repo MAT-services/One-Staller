@@ -11,6 +11,12 @@ body {
                 display: flex;
                 align-items: center;
             }
+            .app-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* espace entre les éléments */
+  margin-top: 8px;
+}
             .app-icon {
                 width: 96px;
                 height: 96px;

@@ -23,6 +23,8 @@ body {
                 font-size: 48px;
                 color: #0078d4;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                background-position: center;
+                background-size: cover;
             }
             .app-info {
                 flex: 1;

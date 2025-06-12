@@ -68,16 +68,6 @@
                             // Auto défilement toutes les 4 secondes
                             let autoSlide = setInterval(nextSlide, 7000);
 
-                            // Boutons manuel
-                            document.querySelector('.next').onclick = () => {
-                              nextSlide();
-                              resetAutoSlide();
-                            };
-                            document.querySelector('.prev').onclick = () => {
-                              prevSlide();
-                              resetAutoSlide();
-                            };
-
                             function resetAutoSlide() {
                               clearInterval(autoSlide);
                               autoSlide = setInterval(nextSlide, 4000);

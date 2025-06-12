@@ -30,7 +30,7 @@
                             let currentIndex = 0;
 
                             if (!prevButton || !nextButton || !carouselInner || items.length === 0) return;
-
+                            /*
                             nextButton.addEventListener("click", () => {
                                 currentIndex = (currentIndex + 1) % items.length;
                                 updateCarousel();
@@ -40,7 +40,7 @@
                                 currentIndex = (currentIndex - 1 + items.length) % items.length;
                                 updateCarousel();
                             });
-
+                            */
                             function updateCarousel() {
                                 const offset = -currentIndex * 100;
                                 carouselInner.style.transform = `translateX(${offset}%)`;
@@ -67,6 +67,16 @@
 
                             // Auto défilement toutes les 4 secondes
                             let autoSlide = setInterval(nextSlide, 7000);
+
+                            // Boutons manuel
+                            document.querySelector('.next').onclick = () => {
+                              nextSlide();
+                              resetAutoSlide();
+                            };
+                            document.querySelector('.prev').onclick = () => {
+                              prevSlide();
+                              resetAutoSlide();
+                            };
 
                             function resetAutoSlide() {
                               clearInterval(autoSlide);

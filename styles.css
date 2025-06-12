@@ -65,6 +65,7 @@ nav a {
    border-radius: 10px;
    right: 10px;
    left: 10px;
+   padding: 0 20px; /* Ajoute du "rempourage" horizontal */
 }
 .app-grid {
    display: grid;

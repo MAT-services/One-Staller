@@ -44,11 +44,7 @@
                                 const offset = -currentIndex * 100;
                                 carouselInner.style.transform = `translateX(${offset}%)`;
                             }
-                        }
-                        // filepath: /workspaces/One-Staller/carousel.htm
-const carouselInner = document.querySelector('.carousel-inner');
-const items = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
+                            // filepath: /workspaces/One-Staller/carousel.htm
 const totalItems = items.length;
 
 function showSlide(index) {
@@ -84,7 +80,8 @@ document.querySelector('.prev').onclick = () => {
 function resetAutoSlide() {
   clearInterval(autoSlide);
   autoSlide = setInterval(nextSlide, 4000);
-}
+} 
+                        }
                     </script>
                 </div>
             </div><br>

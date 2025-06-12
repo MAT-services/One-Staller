@@ -55,7 +55,7 @@
                                 item.classList.toggle('active', i === index);
                               });
                             }
-                            /*
+                            
                             function nextSlide() {
                               currentIndex = (currentIndex + 1) % totalItems;
                               showSlide(currentIndex);
@@ -65,10 +65,9 @@
                               currentIndex = (currentIndex - 1 + totalItems) % totalItems;
                               showSlide(currentIndex);
                             }
-                            */
                             // Auto défilement toutes les 4 secondes
                             let autoSlide = setInterval(nextSlide, 7000);
-
+                            /*
                             // Boutons manuel
                             document.querySelector('.next').onclick = () => {
                               nextSlide();
@@ -78,7 +77,7 @@
                               prevSlide();
                               resetAutoSlide();
                             };
-
+                            */
                             function resetAutoSlide() {
                               clearInterval(autoSlide);
                               autoSlide = setInterval(nextSlide, 4000);

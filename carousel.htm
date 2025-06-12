@@ -49,13 +49,6 @@ button.prev {
 button.next {
   right: 10px;
 }
-.content1 {
-  background-image: url('/One-Staller/assets/BCE1.jpg'); 
-}
-.content2 {
-  background-image: url('/M.png');
-  color: black;
-}
 .content {
   padding: 20px;
 }
@@ -64,21 +57,24 @@ button.next {
   <main class="carousel-main">
     <div class="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active content1">
+        <div class="carousel-item active">
           <div class="content">
             <H1>Publish on One-Staller is FREE!!</H1>
             <button onclick="window.location.href = '/One-Staller/Dev-Eara'">Get started!</button>
             Note to alpha testers: This website is always in developpement, so you may encounter bugs or incomplete features. Please report any issues you find to the development team. Also, DO NOT TRY TO PUBLISH ANY APPLICATIONS! (The website can be turned down.) To see a potential update, clean your cache and reload the page. Thank you for your understanding!
           </div>
         </div>
-        <div class="carousel-item content2">
+        <div class="carousel-item" style="background-image: url('/One-Staller/assets/BCE1.jpg');">
+          <div class="content">
+            <H1>Join our programmers community!</H1>
+            <button onclick="window.location.href = '/MPC/'">Let's see!</button>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('/M.png'); color: black;">
           <div class="content">
             <H1>One Staller ALPHA Update</H1>
             <marquee>This website is in construction.</marquee>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="content">img3</div>
         </div>
       </div>
       <button class="prev">‹-</button>

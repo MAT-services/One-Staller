@@ -30,7 +30,7 @@
                             let currentIndex = 0;
 
                             if (!prevButton || !nextButton || !carouselInner || items.length === 0) return;
-                            
+
                             nextButton.addEventListener("click", () => {
                                 currentIndex = (currentIndex + 1) % items.length;
                                 updateCarousel();
@@ -40,7 +40,7 @@
                                 currentIndex = (currentIndex - 1 + items.length) % items.length;
                                 updateCarousel();
                             });
-                            
+
                             function updateCarousel() {
                                 const offset = -currentIndex * 100;
                                 carouselInner.style.transform = `translateX(${offset}%)`;
@@ -56,12 +56,12 @@
                             }
 
                             function nextSlide() {
-                              currentIndex = (currentIndex + 1) % items.length;
+                              currentIndex = (currentIndex + 1) % totalItems;
                               showSlide(currentIndex);
                             }
 
                             function prevSlide() {
-                              currentIndex = (currentIndex - 1 + items.length) % items.length;
+                              currentIndex = (currentIndex - 1 + totalItems) % totalItems;
                               showSlide(currentIndex);
                             }
 

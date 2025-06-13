@@ -9,15 +9,15 @@ body {
                 color: #fff;
                 padding: 24px 32px;
                 display: flex;
-                align-items: center;
+                align-items: center; 
             }
-            .app-actions {
+            /*.app-actions {
   display: flex;
   flex-direction: column;
   gap: 1px; /* espace entre les éléments */
   margin-top: 8px;
   padding: 12px 32px;
-}
+}*/
             .app-icon {
                 width: 96px;
                 height: 96px;
